@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Circles</title>
+    <style>
+        html,
+        body,
+        canvas {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A projected circle packing</h1>
+    <p>As the mouse pointer is moved, a rectangle of constant area is drawn (in yellow), aligned with the line from the origin to the mouse pointer. Notice that tracing the edge of a red circle produces movement in a corner of the rectangle which traces out a green circle. Notice that, conversely, tracing the edge of a green circle produces a the edge of a red circle.
+    </p>
+    The blue circles are produced by tracing out the horizontal white lines.
+    <p>
+    Use cursor keys to move the view, + and - to zoom in and out. Press space to toggle animation.
+    </p>
+    <p>
+    Inspired by the constant area method from <a href="https://youtu.be/hSsRcpIsunk?t=167">https://youtu.be/hSsRcpIsunk?t=167</a>
+    </p>
+
+    <canvas id="glcanvas" tabindex='1'></canvas>
+    <script src="mq_js_bundle.js"></script>
+    <script>load("circles.wasm");</script>
+</body>
+
+</html>
+
